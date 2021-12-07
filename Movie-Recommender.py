@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import streamlit as st
 
 ## Data preprocessing
-data = pd.read_table('/Users/seraj/Desktop/MoviesII.tsv')
+data = pd.read_table('MoviesII.tsv')
 data = data.drop(['1','2','Country','Language'],axis = 1)
 data = data.dropna()
 for i in range(len(data)):
